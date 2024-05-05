@@ -4,8 +4,10 @@ myHeading.textContent = "Hello world!";
 let myImage = document.querySelector("img");
 myImage.onclick = function () {
     let mySrc = myImage.getAttribute("src");
-    if(mySrc === "firefox-icon.png")
+    if(mySrc === "firefox-icon.png"){
         myImage.setAttribute("src", "pig.jpg");
+        myImage.setAttribute("height", 560)
+    }
     else
         myImage.setAttribute("src", "firefox-icon.png");
 };
