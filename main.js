@@ -6,10 +6,12 @@ myImage.onclick = function () {
     let mySrc = myImage.getAttribute("src");
     if(mySrc === "firefox-icon.png"){
         myImage.setAttribute("src", "pig.jpg");
-        myImage.setAttribute("width", "560");
+        myImage.setAttribute("width", "260");
     }
-    else
+    else{
         myImage.setAttribute("src", "firefox-icon.png");
+        myImage.setAttribute("width", "160");
+    }
 };
 
 var myButton = document.querySelector("button");
